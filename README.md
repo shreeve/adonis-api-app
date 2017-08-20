@@ -1,5 +1,7 @@
 # Adonis API application
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/adonisjs/adonis-api-app.svg)](https://greenkeeper.io/)
+
 This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
 
 1. Bodyparser
