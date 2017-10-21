@@ -11,8 +11,7 @@
 |
 ###
 
-Route = use('Route')
+Route = use 'Route'
 
-Route.get('/', ({ request }) => {
-  return { greeting: 'Hello world in JSON' }
-})
+Route.get '/', ({ request }) =>
+  greeting: 'Hello world in JSON'
