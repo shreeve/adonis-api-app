@@ -1,6 +1,4 @@
-'use strict'
-
-/*
+###
 |--------------------------------------------------------------------------
 | Providers
 |--------------------------------------------------------------------------
@@ -9,8 +7,8 @@
 | a new Adonis specific package, chances are you will register the
 | provider here.
 |
-*/
-const providers = [
+###
+providers = [
   '@adonisjs/framework/providers/AppProvider',
   '@adonisjs/auth/providers/AuthProvider',
   '@adonisjs/bodyparser/providers/BodyParserProvider',
@@ -18,7 +16,7 @@ const providers = [
   '@adonisjs/lucid/providers/LucidProvider'
 ]
 
-/*
+###
 |--------------------------------------------------------------------------
 | Ace Providers
 |--------------------------------------------------------------------------
@@ -26,12 +24,12 @@ const providers = [
 | Ace providers are required only when running ace commands. For example
 | Providers for migrations, tests etc.
 |
-*/
-const aceProviders = [
+###
+aceProviders = [
   '@adonisjs/lucid/providers/MigrationsProvider'
 ]
 
-/*
+###
 |--------------------------------------------------------------------------
 | Aliases
 |--------------------------------------------------------------------------
@@ -42,17 +40,17 @@ const aceProviders = [
 | For example:
 |   { Route: 'Adonis/Src/Route' }
 |
-*/
-const aliases = {}
+###
+aliases = {}
 
-/*
+###
 |--------------------------------------------------------------------------
 | Commands
 |--------------------------------------------------------------------------
 |
 | Here you store ace commands for your package
 |
-*/
-const commands = []
+###
+commands = []
 
 module.exports = { providers, aceProviders, aliases, commands }

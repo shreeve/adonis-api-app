@@ -1,6 +1,4 @@
-'use strict'
-
-const Schema = use('Schema')
+Schema = use('Schema')
 
 class TokensSchema extends Schema {
   up () {

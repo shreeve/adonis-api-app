@@ -1,7 +1,5 @@
-'use strict'
-
 module.exports = {
-  /*
+  ###
   |--------------------------------------------------------------------------
   | Authenticator
   |--------------------------------------------------------------------------
@@ -12,10 +10,10 @@ module.exports = {
   | Available Schemes - basic, session, jwt, api
   | Available Serializers - lucid, database
   |
-  */
+  ###
   authenticator: 'jwt',
 
-  /*
+  ###
   |--------------------------------------------------------------------------
   | Session
   |--------------------------------------------------------------------------
@@ -23,7 +21,7 @@ module.exports = {
   | Session authenticator makes use of sessions to authenticate a user.
   | Session authentication is always persistent.
   |
-  */
+  ###
   session: {
     serializer: 'lucid',
     model: 'App/Models/User',
@@ -32,7 +30,7 @@ module.exports = {
     password: 'password'
   },
 
-  /*
+  ###
   |--------------------------------------------------------------------------
   | Basic Auth
   |--------------------------------------------------------------------------
@@ -44,7 +42,7 @@ module.exports = {
   | This scheme is not persistent and users are supposed to pass
   | login credentials on each request.
   |
-  */
+  ###
   basic: {
     serializer: 'lucid',
     model: 'App/Models/User',
@@ -53,7 +51,7 @@ module.exports = {
     password: 'password'
   },
 
-  /*
+  ###
   |--------------------------------------------------------------------------
   | Jwt
   |--------------------------------------------------------------------------
@@ -61,7 +59,7 @@ module.exports = {
   | The jwt authenticator works by passing a jwt token on each HTTP request
   | via HTTP `Authorization` header.
   |
-  */
+  ###
   jwt: {
     serializer: 'lucid',
     model: 'App/Models/User',

@@ -1,7 +1,5 @@
-'use strict'
-
 module.exports = {
-  /*
+  ###
   |--------------------------------------------------------------------------
   | Origin
   |--------------------------------------------------------------------------
@@ -15,10 +13,10 @@ module.exports = {
   | String: * - A wildcard to allow current request origin
   | Function - Receives the current origin and should return one of the above values.
   |
-  */
+  ###
   origin: false,
 
-  /*
+  ###
   |--------------------------------------------------------------------------
   | Methods
   |--------------------------------------------------------------------------
@@ -28,10 +26,10 @@ module.exports = {
   | String - Comma seperated list of allowed methods
   | Array - An array of allowed methods
   |
-  */
+  ###
   methods: ['GET', 'PUT', 'POST'],
 
-  /*
+  ###
   |--------------------------------------------------------------------------
   | Headers
   |--------------------------------------------------------------------------
@@ -46,10 +44,10 @@ module.exports = {
   | String: * - A wildcard to allow current request headers
   | Function - Receives the current header and should return one of the above values.
   |
-  */
+  ###
   headers: true,
 
-  /*
+  ###
   |--------------------------------------------------------------------------
   | Expose Headers
   |--------------------------------------------------------------------------
@@ -61,10 +59,10 @@ module.exports = {
   | String: Comma seperated list of allowed headers
   | Array - An array of allowed headers
   |
-  */
+  ###
   exposeHeaders: false,
 
-  /*
+  ###
   |--------------------------------------------------------------------------
   | Credentials
   |--------------------------------------------------------------------------
@@ -72,16 +70,16 @@ module.exports = {
   | Define Access-Control-Allow-Credentials header. It should always be a
   | boolean.
   |
-  */
+  ###
   credentials: false,
 
-  /*
+  ###
   |--------------------------------------------------------------------------
   | MaxAge
   |--------------------------------------------------------------------------
   |
   | Define Access-Control-Allow-Max-Age
   |
-  */
+  ###
   maxAge: 90
 }

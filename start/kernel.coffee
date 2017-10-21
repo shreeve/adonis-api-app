@@ -1,8 +1,6 @@
-'use strict'
+Server = use('Server')
 
-const Server = use('Server')
-
-/*
+###
 |--------------------------------------------------------------------------
 | Global Middleware
 |--------------------------------------------------------------------------
@@ -10,12 +8,12 @@ const Server = use('Server')
 | Global middleware are executed on each http request only when the routes
 | match.
 |
-*/
-const globalMiddleware = [
+###
+globalMiddleware = [
   'Adonis/Middleware/BodyParser'
 ]
 
-/*
+###
 |--------------------------------------------------------------------------
 | Named Middleware
 |--------------------------------------------------------------------------
@@ -31,12 +29,12 @@ const globalMiddleware = [
 | // use
 | Route.get().middleware('auth')
 |
-*/
-const namedMiddleware = {
+###
+namedMiddleware = {
   auth: 'Adonis/Middleware/Auth'
 }
 
-/*
+###
 |--------------------------------------------------------------------------
 | Server Middleware
 |--------------------------------------------------------------------------
@@ -45,8 +43,8 @@ const namedMiddleware = {
 | not registered. Features like `static assets` and `cors` needs better
 | control over request lifecycle.
 |
-*/
-const serverMiddleware = [
+###
+serverMiddleware = [
   'Adonis/Middleware/Static',
   'Adonis/Middleware/Cors'
 ]

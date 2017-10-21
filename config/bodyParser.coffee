@@ -1,7 +1,5 @@
-'use strict'
-
 module.exports = {
-  /*
+  ###
   |--------------------------------------------------------------------------
   | JSON Parser
   |--------------------------------------------------------------------------
@@ -9,9 +7,9 @@ module.exports = {
   | Below settings are applied when request body contains JSON payload. If
   | you want body parser to ignore JSON payload, then simply set `types`
   | to an empty array.
-  */
+  ###
   json: {
-    /*
+    ###
     |--------------------------------------------------------------------------
     | limit
     |--------------------------------------------------------------------------
@@ -19,10 +17,10 @@ module.exports = {
     | Defines the limit of JSON that can be sent by the client. If payload
     | is over 1mb it will not be processed.
     |
-    */
+    ###
     limit: '1mb',
 
-    /*
+    ###
     |--------------------------------------------------------------------------
     | strict
     |--------------------------------------------------------------------------
@@ -30,10 +28,10 @@ module.exports = {
     | When `scrict` is set to true, body parser will only parse Arrays and
     | Object. Otherwise everything parseable by `JSON.parse` is parsed.
     |
-    */
+    ###
     strict: true,
 
-    /*
+    ###
     |--------------------------------------------------------------------------
     | types
     |--------------------------------------------------------------------------
@@ -42,7 +40,7 @@ module.exports = {
     | add your own types here, but the request body should be parseable
     | by `JSON.parse` method.
     |
-    */
+    ###
     types: [
       'application/json',
       'application/json-patch+json',
@@ -51,48 +49,48 @@ module.exports = {
     ]
   },
 
-  /*
+  ###
   |--------------------------------------------------------------------------
   | Raw Parser
   |--------------------------------------------------------------------------
   |
   |
   |
-  */
+  ###
   raw: {
     types: [
       'text/*'
     ]
   },
 
-  /*
+  ###
   |--------------------------------------------------------------------------
   | Form Parser
   |--------------------------------------------------------------------------
   |
   |
   |
-  */
+  ###
   form: {
     types: [
       'application/x-www-form-urlencoded'
     ]
   },
 
-  /*
+  ###
   |--------------------------------------------------------------------------
   | Files Parser
   |--------------------------------------------------------------------------
   |
   |
   |
-  */
+  ###
   files: {
     types: [
       'multipart/form-data'
     ],
 
-    /*
+    ###
     |--------------------------------------------------------------------------
     | Max Size
     |--------------------------------------------------------------------------
@@ -106,10 +104,10 @@ module.exports = {
     |
     | Also this value is considered when `autoProcess` is set to true.
     |
-    */
+    ###
     maxSize: '20mb',
 
-    /*
+    ###
     |--------------------------------------------------------------------------
     | Auto Process
     |--------------------------------------------------------------------------
@@ -120,10 +118,10 @@ module.exports = {
     |
     | This value can contain a boolean or an array of route patterns
     | to be autoprocessed.
-    */
+    ###
     autoProcess: true,
 
-    /*
+    ###
     |--------------------------------------------------------------------------
     | Process Manually
     |--------------------------------------------------------------------------
@@ -132,7 +130,7 @@ module.exports = {
     | manual process. This list should only contain routes when autoProcess
     | is to true. Otherwise everything is processed manually.
     |
-    */
+    ###
     processManually: []
   }
 }

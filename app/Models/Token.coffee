@@ -1,6 +1,4 @@
-'use strict'
-
-const Model = use('Model')
+Model = use('Model')
 
 class Token extends Model {
 }

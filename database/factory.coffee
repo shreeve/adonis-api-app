@@ -1,6 +1,4 @@
-'use strict'
-
-/*
+###
 |--------------------------------------------------------------------------
 | Factory
 |--------------------------------------------------------------------------
@@ -9,14 +7,14 @@
 | models. Later you can use these blueprints to seed your database
 | with dummy data.
 |
-*/
+###
 
 // const Factory = use('Factory')
 
-/**
+###
   Factory.blueprint('App/Models/User', (faker) => {
     return {
       username: faker.username()
     }
   })
-*/
+###

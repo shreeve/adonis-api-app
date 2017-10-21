@@ -1,10 +1,8 @@
-'use strict'
-
-const Env = use('Env')
-const Helpers = use('Helpers')
+Env = use('Env')
+Helpers = use('Helpers')
 
 module.exports = {
-  /*
+  ###
   |--------------------------------------------------------------------------
   | Default Connection
   |--------------------------------------------------------------------------
@@ -12,10 +10,10 @@ module.exports = {
   | Connection defines the default connection settings to be used while
   | interacting with SQL databases.
   |
-  */
+  ###
   connection: Env.get('DB_CONNECTION', 'sqlite'),
 
-  /*
+  ###
   |--------------------------------------------------------------------------
   | Sqlite
   |--------------------------------------------------------------------------
@@ -25,7 +23,7 @@ module.exports = {
   |
   | npm i --save sqlite3
   |
-  */
+  ###
   sqlite: {
     client: 'sqlite3',
     connection: {
@@ -34,7 +32,7 @@ module.exports = {
     useNullAsDefault: true
   },
 
-  /*
+  ###
   |--------------------------------------------------------------------------
   | MySQL
   |--------------------------------------------------------------------------
@@ -43,7 +41,7 @@ module.exports = {
   |
   | npm i --save mysql
   |
-  */
+  ###
   mysql: {
     client: 'mysql',
     connection: {
@@ -55,7 +53,7 @@ module.exports = {
     }
   },
 
-  /*
+  ###
   |--------------------------------------------------------------------------
   | PostgreSQL
   |--------------------------------------------------------------------------
@@ -64,7 +62,7 @@ module.exports = {
   |
   | npm i --save pg
   |
-  */
+  ###
   pg: {
     client: 'pg',
     connection: {
