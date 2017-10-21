@@ -9,7 +9,7 @@
 |
 ###
 
-// const Factory = use('Factory')
+# Factory = use('Factory')
 
 ###
   Factory.blueprint('App/Models/User', (faker) => {
